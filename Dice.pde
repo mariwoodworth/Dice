@@ -1,10 +1,14 @@
+Die one = new Die();
 void setup()
 {
 	noLoop();
+	size(600, 600);
 }
 void draw()
 {
-	//your code here
+	rect(100, 200, 10, 10, 7);
+	background(0,0);
+	die.show();
 }
 void mousePressed()
 {
@@ -12,7 +16,7 @@ void mousePressed()
 }
 class Die //models one single dice cube
 {
-	//variable declarations here
+	int x, y;
 	
 	Die(int x, int y) //constructor
 	{
@@ -24,6 +28,14 @@ class Die //models one single dice cube
 	}
 	void show()
 	{
-		//your code here
+		for(y = 200; y <= 600; y+= 200)
+		{
+			for(x = 200; x <= 600; x += 200)
+			{
+				rect(100, 100, 20, 20, 7);
+			}
+			System.out.println();
+		}
+
 	}
 }
