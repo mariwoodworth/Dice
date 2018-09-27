@@ -1,4 +1,4 @@
-Die one = new Die();
+Die one;
 void setup()
 {
 	noLoop();
@@ -8,7 +8,7 @@ void draw()
 {
 	rect(100, 200, 10, 10, 7);
 	background(0,0);
-	die.show();
+	Die.show();
 }
 void mousePressed()
 {
@@ -20,7 +20,7 @@ class Die //models one single dice cube
 	
 	Die(int x, int y) //constructor
 	{
-		//variable initializations here
+		for (x = 0; x = 600; x = x + 200);
 	}
 	void roll()
 	{
