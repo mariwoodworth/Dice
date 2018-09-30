@@ -7,7 +7,7 @@
   }
   void draw()
   {
-     background((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
+     background((int)(Math.random()*100)+150,(int)(Math.random()*50)+200,(int)(Math.random()*255));
      int sum = 0;
      for(int y = 10; y <= 500; y = y + 100) //5 rows
      {
